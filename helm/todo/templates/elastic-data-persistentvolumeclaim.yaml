@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: {{ template "todo.fullname" . }}-todo
+  name: elastic-data-pvc
+spec:
+#  storageClassName: Use the default dynamic provisioner class    manual
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi

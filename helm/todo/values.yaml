@@ -1,0 +1,17 @@
+todoImageUser: garybrooks
+todoVersion: "1.0"
+
+replicas:
+  todoApiGateway: 2
+  todoCacheIngestion: 1
+  todoCacheService: 2
+  todoStorageIngestion: 1
+  todoStorageService: 2
+  todoProxy: 2
+  todoSearchIngestion: 1
+  todoSearchService: 2
+  todoView: 1
+  todoElastic: 1
+  todoPostgres: 1
+  todoRabbitmq: 1
+  todoRedis: 1

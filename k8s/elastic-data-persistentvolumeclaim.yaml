@@ -4,7 +4,7 @@ metadata:
   namespace: todo
   name: elastic-data-pvc
 spec:
-  storageClassName: manual
+#  storageClassName: Use the default dynamic provisioner class    manual
   accessModes:
   - ReadWriteOnce
   resources:
